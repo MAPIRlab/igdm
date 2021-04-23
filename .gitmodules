@@ -1,0 +1,3 @@
+[submodule "gdm"]
+	path = gdm
+	url = https://github.com/MAPIRlab/gdm.git
