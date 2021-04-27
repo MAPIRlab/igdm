@@ -4,6 +4,22 @@ git clone --recursive https://github.com/MAPIRlab/igdm.git
 #                  Information-Driven Gas Distribution Mapping
 <!--------------------------------------+-------------------------------------->
 
+We contribute with an efficient exploration algorithm for 2D gas-distribution mapping with an autonomous mobile robot. Our proposal combines a Gaussian Markov random field estimator based on gas and wind measurements that is devised for very sparse sample sizes and indoor environments, with a partially observable Markov decision process to close the robot's control loop.
+
+
+
+
+<!--------------------------------------+-------------------------------------->
+#                                  Example Code
+<!--------------------------------------+-------------------------------------->
+
+The simplest starting point is running our test example as follows:
+```
+python igmd/pomdp/test.py
+```
+It will run a simulated exploration of a indoor-like environment and report both
+to terminal as well as to disk. 
+
 
 
 
