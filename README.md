@@ -15,7 +15,7 @@ We contribute with an efficient exploration algorithm for 2D gas-distribution ma
 
 The simplest starting point is running our test example as follows:
 ```
-python igmd/pomdp/test.py
+python igdm/pomdp/test.py
 ```
 It will run a simulated exploration of a indoor-like environment and report both
 to terminal as well as to disk. 
