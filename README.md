@@ -25,6 +25,11 @@ this software in [AUTHORS.md](AUTHORS.md). Thanks to all of you!
 #                                    License
 <!--------------------------------------+-------------------------------------->
 
+This software was developed in a collaboration between the Machine Perception 
+and Intelligent Robotics (MAPIR) research group, University of Malaga, and the 
+Distributed Intelligent Systems and Algorithms Laboratory (DISAL), École 
+Polytechnique Fédérale de Lausanne (EPFL).
+
 * This software is released under a GPLv3 license.
   Read [license-GPLv3.txt](LICENSE),
   or if not present, <http://www.gnu.org/licenses/>.
