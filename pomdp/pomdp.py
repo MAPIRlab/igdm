@@ -73,7 +73,7 @@ class AutoGDM:
         return self._gdm.toNormalDistributionMap()
 
     def plot(self, save):
-        self._gdm.toNormalDistributionMap().plot(save=save) #, mean_max=1, variance_max=4)
+        self._gdm.toNormalDistributionMap().plot(save=save, mean_max=0.5, variance_max=3)
         self._gdm.getWindEstimate().plot(save=save + "_wind")
         self._plot(save)
         return self

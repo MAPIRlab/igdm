@@ -309,18 +309,19 @@ def printTime():
 if __name__ == "__main__":
 
     import matplotlib as mpl
-    sns.set(rc={'figure.figsize': (6, 3)})
+    sns.set(rc={'figure.figsize': (6, 4)})
     sns.set_style("whitegrid")
     mpl.rc('font', family='serif', serif='Times New Roman')
 
-    """
+
     #1: coarse resolution
-    df = convertTestResultsToDF("/home/andy/tmp/picasso/test_01/")
+    #df = convertTestResultsToDF("/home/andy/tmp/picasso/test_01/")
+    df = convertTestResultsToDF("/home/andy/tmp/IGDM_reports/test_01/")
     df = df.loc[df['step'] < 210]
-    df = df.loc[df['scenario'] == 3 ]
-    sns.lineplot(x="step", y="rmse", hue='coarse_resolution', data=df, palette="colorblind")
+    #df = df.loc[df['scenario'] == 1 ]
+    sns.lineplot(x="step", y="rmse", hue='coarse_resolution', data=df, palette="tab10")
     plt.show()
-    """
+
 
     """
     #4: contribution of energy terms
@@ -341,12 +342,11 @@ if __name__ == "__main__":
 
     df["strategy"] = df.apply(df_strategy, axis = 1)
     df = df.loc[df['strategy'] != "igdm_invalid"]
-    sns.lineplot(x="step", y="rmse", hue="strategy", data=df)
+    sns.lineplot(x="step", y="rmse", hue="strategy", data=df, palette="tab10")
     plt.show()
     """
 
-
-
+    """
     ## 5: Horizon size
     df = convertTestResultsToDF("/home/andy/tmp/picasso/test_05/")
     df = df.loc[df['step'] < 400]
@@ -359,6 +359,7 @@ if __name__ == "__main__":
     df = df.loc[df['scenario'] == 3]
     sns.lineplot(x="step", y="rmse", hue='igdm_H', data=df, palette="colorblind")
     plt.show()
+    """
 
 
     """

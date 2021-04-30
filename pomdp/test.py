@@ -317,7 +317,7 @@ class Test:
             ## PLOT
             if (step) % self.test_config.plot_every_steps == 0:
                 if self.test_config.plot_path:
-                    path_map.plot(save=folder + "/" + str(step) + "_path")
+                    path_map.plot(save=folder + "/" + str(step) + "_path", vmax=3)
                 if self.test_config.plot_gdm:
                     self.auto_gdm.plot(save=folder + "/" + str(step))
 
@@ -381,13 +381,13 @@ if __name__ == "__main__":
         test_config.scenario_id = 1
         test_config.start = (11, 4.85)
         test_config.verbose = True
-        test_config.look_ahead_steps = 2
+        test_config.look_ahead_steps = 1
         test_config.max_steps = 5
         test_config.step_size = 1
         test_config.sensor_noise = 0
         test_config.report_every_steps = 5
         test_config.plot_every_steps = 5
-        test_config.coarse_resolution = 0.1
+        test_config.coarse_resolution = 2
 
         from gdm.common.environments import corridor_1_running
         test_config.past_path = []
